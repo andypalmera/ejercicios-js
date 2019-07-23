@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //    ====== ejercico 1=========
+    //     var numero;
+
+    // for (var i = 0; i < 10; i++){
+    //     numero= parseInt(prompt("ingrese un numero"));
+    //     if(numero == 0){
+    //         document.write("el numero es cero <br/>");
+    //     }else if(numero % 2 == 0){
+    //         document.write("el numero " + numero + " es par <br/>");
+    //     }else{
+    //         document.write("el numero " + numero + " es impar <br/>");
+    //     }
+    // }
+    // =========== ejercico 3============
+
+    // var rangoMenor = prompt ("ingrese numero menor");
+    // var rango Mayor = prompt ("ingrese numero mayor");
+    // var dif >= 5
+
+    // // if... continuar
+
+
+
+    // do{
+    //     var numero= prompt("ingrese numero");
+    //     var r= confirm("desea seguir ingresando numeros?)")
+    // }while (r)
+
+    // ========= ejercicio 7====== lo hice yo y quedo bien :) pero hay una forma de hacerlo con switch
+do{
+    do {
+        var numero1 =parseFloat(prompt("ingrese un numero"));
+    }while (isNaN(numero1));
+    do{
+        var numero2 = parseFloat(prompt("ingrese otro numero"));
+    } while (isNaN(numero2));
+    do{
+        var operador = prompt("ingrese un operador: +, -, * ó /");
+    }while (operador != "+" || operador != "-" || operador != "*" || operador != "/" || operador != "%")
+    
+    var r = confirm("desea realizar otra operacion?");
+
+    if (operador == "+" ){
+        document.write("el resultado es " + (numero1 + numero2) + "<br/>" );
+    }else if(operador == "-" ){
+        document.write("el resultado es " + (numero1 - numero2));
+    }else if(operador == "*" ){
+        document.write("el resultado es " + (numero1 * numero2));
+    }else if(operador == "/" ){
+        document.write("el resultado es " + (numero1 / numero2));
+    }
+    // en caso de switch el r debe ir despues.. antes del document.write
+    // se puede poner el document.write aca porque igual se muestra la respuesta es al final del loop
+   
+} while (r)
+   
+ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
